@@ -1,35 +1,35 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: payment-orchestrator
+  name: storeserviceat
   labels:
-    app: payment-orchestrator
+    app: storeserviceat
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: payment-orchestrator
+      app: storeserviceat
   template:
     metadata:
       labels:
-        app: payment-orchestrator
+        app: storeserviceat
     spec:
       containers:
-      - name: payment-orchestrator
-        image: httpsantos/payment_orchestrator:1.1
+      - name: storeserviceat
+        image: natanborrges/storeserviceat:latest
         ports:
         - containerPort: 7001
         env:
-          - name: RABBIT_HOST
-            value: broker
+          - name: AMQP_HOSTNAME
+            value: rabbitmq
           - name: RABBIT_PORT
             value: "5672"
-          - name: RABBIT_USERNAME
+          - name: AMQP_USERNAME
             valueFrom:
               secretKeyRef:
                 name: rabbit-user
                 key: username
-          - name: RABBIT_PASSWORD
+          - name: AMQP_PASSWORD
             valueFrom:
               secretKeyRef:
                 name: rabbit-user
