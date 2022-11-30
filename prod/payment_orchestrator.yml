@@ -15,7 +15,7 @@ spec:
         app: payment-orchestrator
     spec:
       containers:
-      - name: vaichover
+      - name: payment-orchestrator
         image: httpsantos/payment_orchestrator:1.1
         ports:
         - containerPort: 7001
