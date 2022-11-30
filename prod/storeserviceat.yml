@@ -17,13 +17,9 @@ spec:
       containers:
       - name: storeserviceat
         image: natanborrges/storeserviceat:latest
-        ports:
-        - containerPort: 7001
         env:
           - name: AMQP_HOSTNAME
             value: rabbitmq
-          - name: RABBIT_PORT
-            value: "5672"
           - name: AMQP_USERNAME
             valueFrom:
               secretKeyRef:
