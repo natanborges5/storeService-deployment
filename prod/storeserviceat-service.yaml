@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: storeserviceat
+
+spec:
+  selector:
+    app: storeserviceat
+
+  type: NodePort
+  ports:
+    - port: 3064
+      nodePort: 30003
