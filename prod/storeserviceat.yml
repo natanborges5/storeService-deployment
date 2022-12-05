@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: storeserviceat
-        image: natanborrges/storeserviceat:latest
+        image: natanborrges/storeserviceat:1.00ALPHA
         env:
           - name: AMQP_HOSTNAME
             value: rabbitmq
