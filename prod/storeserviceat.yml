@@ -19,7 +19,7 @@ spec:
         image: natanborrges/storeserviceat:1.00ALPHA
         env:
           - name: AMQP_HOSTNAME
-            value: rabbitmq
+            value: broker
           - name: AMQP_USERNAME
             valueFrom:
               secretKeyRef:
