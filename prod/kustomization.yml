@@ -3,3 +3,4 @@ kind: Kustomization
 resources:
   - storeserviceat.yml
   - storeserviceat-service.yaml
+  - storeserviceat-ingress.yaml
