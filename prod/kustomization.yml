@@ -4,3 +4,7 @@ resources:
   - storeserviceat.yml
   - storeserviceat-service.yaml
   - storeserviceat-ingress.yaml
+images:
+  - name: storeserviceat
+    newName: natanborrges/storeserviceat
+    newTag: 1.02ALPHA
