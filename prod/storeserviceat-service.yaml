@@ -7,7 +7,7 @@ spec:
   selector:
     app: storeserviceat
 
-  type: NodePort
+  type: ClusterIP
   ports:
     - port: 3064
-      nodePort: 3064
+      targetPort: 3064
