@@ -10,4 +10,4 @@ spec:
   type: NodePort
   ports:
     - port: 3064
-      nodePort: 30003
+      nodePort: 3064
