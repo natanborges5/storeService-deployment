@@ -7,4 +7,4 @@ resources:
 images:
   - name: storeserviceat
     newName: natanborrges/storeserviceat
-    newTag: 1.03ALPHA
+    newTag: 1.04ALPHA
