@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: storeserviceat
-        image: natanborrges/storeserviceat:1.04ALPHA
+        image: natanborrges/storeserviceat:1.05ALPHA
         env:
           - name: AMQP_HOSTNAME
             value: broker
